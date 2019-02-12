@@ -1,18 +1,63 @@
-header h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+header {
+    font-family: Arimo;
     font-size: 25px;
+    color: #155d85;
   }
-  
+
+/*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #155d85;
+}*/
+
+.Experience {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #155d85;
+  font-size: 20px
+}
+
+.Education {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #155d85;
+  font-size: 20px
+}
+
+.Skills {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #155d85;
+  font-size: 20px
+}
+h1 {
+  margin-top: 0%;
+  Margin-bottom: 0%;
+}
+
+h2 {
+  font-size: 20px;
+  font-style: normal;
+  margin-top: -.1%;
+}
+
+h3 {
+  font-family: verdana;
+    font-size: 20px;
+    color: #343434;
+}
+
   p {
     font-family: verdana;
-    font-size: 20px;
+    font-size: 12px;
+    color: #343434;
   }
-  ul.a {
-    list-style-type: circle;
+
+  ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #343434;
   }
 
 body {
-    background-color: lightblue;
+    background-color: white;
     width: 100%
   }
   
@@ -22,21 +67,41 @@ body {
     margin: 20% 20%;
 }
   
-  .grid-container > div {
+  /*.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     padding: 20px 0;
-    font-size: 30px;
-  }
+    font-size: 30px;*/
 
-.col1 {
-    width: 20%;
-    float: left;
-    margin: 1%;
-    background: blue
+.wrapper > div{
+  background:white;
+  padding: 1em;
+  box-shadow: 10px 10px 5px grey;
+  /*justify-content: space-evenly;*/
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
-.col2 {
-    width: 60%;
-    float: right;
-    margin: 1%;
+
+.wrapper > div:nth-child(odd){
+  background: #155d85;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 2; 
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 20% 10% 20% 30% 20%;
+  /*grid-template-rows: repeat(10);*/
+  /*grid-template-columns: 1fr 1f 3fr 1fr;*/
+  /*grid-template-columns: repeat (2, 2fr);
+  /*grid-column-gap: 1em;
+  grid-row-gap: 1em;*/
+  /*grid-auto-rows: 100px;*/
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px) auto;
+  /*justify-content: space-evenly;*/
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
