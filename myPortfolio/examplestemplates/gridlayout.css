@@ -1,0 +1,15 @@
+/*style sheet*/
+    .grid {
+        display:grid;
+        grid-template-columns: 20% 70%;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+    .grid > div {
+        background: #eee;
+        padding: 1em;
+    }
+
+    .grid > div:nth-child(odd) {
+        background: #ddd;
+    }
