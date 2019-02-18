@@ -17,18 +17,26 @@
 }
 
 .box1 {
-    align-self: start;
+    /*align-self: start;*/
+    grid-column: 1/3;
+    grid-row: 1/3;
 }
 
 .box2 {
-    align-self: end;
+    /*align-self: end;*/
+    grid-column: 3;
+    grid-row: 1/3;
 }
 
 .box3 {
-    justify-self: end;
+    /*justify-self: end;*/
+    grid-column: 2/4;
+    grid-row: 3;
 }
 
 .box4 {
-
+    grid-column: 1;
+    grid-row: 2/4;
+    border: 1px solid;
 }
 
