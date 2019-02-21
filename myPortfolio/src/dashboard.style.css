@@ -12,14 +12,11 @@ grid-area: main;
 nav {
 background-color: lightsalmon;
 grid-area: nav;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 aside {
 background-color: lightgreen;
 grid-area: aside;
-}
-.banner {
-background-color: lavender;
-grid-area: banner;
 }
 footer {
 background-color: khaki;
@@ -33,21 +30,17 @@ grid-auto-rows: minmax(100px, auto);
 grid-gap: 1em;
 justify-items: stretch;
 align-items: stretch;
-/*grid-template-areas: 
+grid-template-areas: 
   "header"
   "nav"
   "main"
   "aside"
   "banner"
   "footer"
-  "aside2";*/
+  "aside"
 }
 
 /* Calculator */
-
-aside {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 button {
   margin: 0;
@@ -102,14 +95,30 @@ button:active {
   margin: 0.5rem;
 }
 
-.nested {
+.aside {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 20%;
   grid-gap: 1em;
 }
 
-.nested > div {
+.aside > div {
+  border: #333 1px solid;
+  padding: 1em;
+}
+
+.banner2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 9rem;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background: lightgray;
+}
+
+.banner2 > div {
   border: #333 1px solid;
   padding: 1em;
 }
