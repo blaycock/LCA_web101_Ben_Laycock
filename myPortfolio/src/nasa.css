@@ -1,0 +1,13 @@
+.card {    
+  display: flex;
+  justify-content: space-evenly;
+  width: 9rem;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background: lightgray;
+}
+
+img.resize {
+    width:850px; /* you can use % */
+    height: 450px;
+}
