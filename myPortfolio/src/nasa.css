@@ -1,13 +1,69 @@
-.card {    
-  display: flex;
-  justify-content: space-evenly;
-  width: 9rem;
-  margin: 0 auto;
-  border: 1px solid #000;
-  background: lightgray;
+body {
+  width: 850px;
+  margin: 0 auto;   
+}
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin: 25px;
 }
 
-img.resize {
-    width:850px; /* you can use % */
-    height: 450px;
+header {
+  height: 450px;
+  background-image: url("solar-system-emergence-spitzer-telescope-telescope-41951.jpeg");
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 70px;
+  opacity: 0.8;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+section {
+  display: flex;
+  height: 324px;
+  width: 850px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-flow: row wrap;
+  background-color: rgb(224, 222, 222);
+  margin-top: 20px;
+}
+
+.flex-item {
+  width: 270px;
+  height: 374px;
+}
+
+#container {
+  display: table;
+  height: 450px;
+  margin: 0 auto;
+  width: 400px;
+}
+.content {
+  padding: 40px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+p {
+  text-align: Left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  line-height: 0.6;
+  margin-left: 25px;
+}
+
+.contactus {
+  width: 100px;
+  height: 100px;
+  text-align: left;
+  margin: 25px;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
 }
