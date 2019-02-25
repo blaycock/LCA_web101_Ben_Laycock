@@ -64,6 +64,24 @@ p {
   margin: 25px;
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+@media(min-width: 700px) {
+  section {
+      display: flex;
+      flex-direction: row;
+  }
+  header {
+
+  }
+  #container {
+
+  }
+  .content {
+
+  }
+  .contactus {
+    
+  }
 
 }
