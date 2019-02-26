@@ -96,7 +96,7 @@ button:active {
 }
 
 .aside {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 20%;
   grid-gap: 1em;
