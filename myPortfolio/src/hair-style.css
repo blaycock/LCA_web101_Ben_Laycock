@@ -1,0 +1,49 @@
+/* Main Style */
+header {
+    text-align: center;
+}
+
+#header div {
+   
+}
+
+body {
+    display: grid;
+    background: #fff;
+    font-family:;
+    font-size:;
+    font-weight:;
+    line-height:;
+    margin:;
+    min-width:;
+    padding:;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 56px 0 0;
+    list-style-type: disc;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+#gallery img {
+    width: 500px;
+    height: 250px;
+    border: 2px solid #1a1a1a;
+    padding: 0;
+    margin: 0;
+    opacity: .8;
+    margin: 10px 0 10px 20px;
+}
+
+footer {
+
+}
