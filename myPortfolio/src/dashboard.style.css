@@ -229,11 +229,11 @@ cite {
     height: 325px;
   }
   footer {
-    width:374px;
+    width:360px;
     height: 325px;
   }
   aside {
-    width: 374px;
+    width: 360px;
     height: 325px;
   }
   nav {
@@ -241,11 +241,11 @@ cite {
     height: 10px;
   }
   nav ul {
-    font-size: 15px;
+    font-size: 14px;
   }
   .responsive {
     width: 100%;
-    max-width: 374px;
+    max-width: 360px;
     height: auto;
   }
   main {
@@ -270,7 +270,7 @@ cite {
   }
   .responsive {
     width: 100%;
-    max-width: 576px;
+    max-width: 567px;
     height: auto;
   }
   #cal {
@@ -278,18 +278,18 @@ cite {
     height: 325px;
   }
   nav {
-    width: 576px;
+    width: 567px;
     height: 10px;
   }
   main {
     width: 100%;
   }
   footer {
-    width:576px;
+    width:567px;
     height: 325px;
   }
   aside {
-    width: 576px;
+    width: 560px;
     height: 325px;
   }
   nav ul {
