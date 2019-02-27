@@ -228,6 +228,10 @@ cite {
     width: 374px;
     height: 325px;
   }
+  ul {
+    margin: 0;
+    padding: 11px;
+  }
   footer {
     width:360px;
     height: 325px;
@@ -264,10 +268,6 @@ cite {
     "banner"  
     "footer";
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
   .responsive {
     width: 100%;
     max-width: 567px;
@@ -278,8 +278,9 @@ cite {
     height: 325px;
   }
   nav {
-    width: 567px;
+    width: 576px;
     height: 10px;
+    padding: 1em;
   }
   main {
     width: 100%;
@@ -294,6 +295,7 @@ cite {
   }
   nav ul {
     font-size: 20px;
+    width: 600px;
   }
 }
 
