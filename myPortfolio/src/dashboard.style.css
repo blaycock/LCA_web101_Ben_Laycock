@@ -10,8 +10,8 @@ margin: 0;
 }
 main {
 height: auto;
-width: 100%;
-grid-area: main;
+ min-height: calc(100vh - 54px);
+ grid-area: main;
 }
 nav {
 grid-area: nav;
@@ -249,23 +249,27 @@ cite {
       "footer"; 
   }
   #cal {
-    width: 375px;
+    width: 545px;
     height: 325px;
   }
   footer {
-    width:365px;
+    width:545px;
     height: 325px;
   }
   aside {
-    width: 365px;
+    width: 545px;
     height: 325px;
   }
+  nav {
+    width: 545px;
+    height: 10px;
+  }
   nav ul {
-    font-size: 14px;
+    font-size: 23px;
   }
   .responsive {
     width: 100%;
-    max-width: 400px;
+    max-width: 545px;
     height: auto;
   }
 }
@@ -287,71 +291,124 @@ cite {
   }
   .responsive {
     width: 100%;
-    max-width: 500px;
+    max-width: 745px;
     height: auto;
   }
   #cal {
-    width: 635px;
+    width: 745px;
     height: 325px;
   }
   nav {
-    width: 500px;
+    width: 745px;
     height: 10px;
   }
   main {
     width: 100%;
   }
   footer {
-    width:500px;
+    width:745px;
     height: 325px;
   }
   aside {
-    width: 500px;
+    width: 745px;
     height: 325px;
   }
   nav ul {
-    font-size: 18px;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header  header"
-    "nav     nav"
-    "aside   main"
-    "banner  footer";
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "nav"
+    "aside"
+    "banner"  
+    "footer";
    }
    nav ul {
      display: flex;
      justify-content: space-between;
-   }
-   .responsive {
+  }
+  .responsive {
     width: 100%;
+    max-width: 990px;
     height: auto;
+  }
+  #cal {
+    width: 990px;
+    height: 325px;
+  }
+  nav {
+    width: 990px;
+    height: 10px;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    width: 990px;
+    height: 325px;
+  }
+  aside {
+    width: 990px;
+    height: 325px;
+  }
+  nav ul {
+    font-size: 35px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: 
-    "header header  header"
+      "header header  header"
       "nav    main    aside"
       "nav    main    banner"
-      "footer footer  footer";
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  html {
-    background: pink;
-  }
+      "footer footer  footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
   .responsive {
     width: 100%;
+    max-width: 70%;
     height: auto;
   }
-  
+  #cal {
+    width: 100%;
+    height: 100%;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    background-color: lightsalmon;
+  }
+  main {
+    width: 100%;
+    background-color: pink;
+  }
+  footer {
+    width: 100%;
+    height: 100%;
+    background-color: khaki;
+  }
+  aside {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+  }
+  nav ul {
+    font-size: 18px;
+  }
+  header {
+  background-color: lightblue;
+}
+ .banner {
+  background-color: lavender;
+ }
 }
