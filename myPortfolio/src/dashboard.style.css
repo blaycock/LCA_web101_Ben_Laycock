@@ -255,6 +255,7 @@ cite {
   main {
     height: auto;
      min-height: calc(5vh - 54px);
+  }
 }
 
 @media (min-width: 576px) {
@@ -405,5 +406,4 @@ cite {
  .banner {
   background-color: lavender;
  }
-}
 }
