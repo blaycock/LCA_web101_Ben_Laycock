@@ -156,30 +156,6 @@ button:active {
 
 /* Time and Date */
 
-.box {
-  background: red;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 6em 0 2em;
-  padding: 0 20px 20px;
-
-}
-
-  .date #daymonth {
-    color: white;
-    font-size: 2em;
-    padding: 10px 0;
-}
-
-.date #year {
-  color: lightblue;
-  font-size: 1.8em;
-}
-
-.clock {
-  background-color: white;
-
-}
 .responsive {
   width: 100%;
   height: auto;
@@ -249,29 +225,32 @@ cite {
       "footer"; 
   }
   #cal {
-    width: 545px;
+    width: 374px;
     height: 325px;
   }
   footer {
-    width:545px;
+    width:374px;
     height: 325px;
   }
   aside {
-    width: 545px;
+    width: 374px;
     height: 325px;
   }
   nav {
-    width: 545px;
+    width: 374px;
     height: 10px;
   }
   nav ul {
-    font-size: 23px;
+    font-size: 15px;
   }
   .responsive {
     width: 100%;
-    max-width: 545px;
+    max-width: 374px;
     height: auto;
   }
+  main {
+    height: auto;
+     min-height: calc(5vh - 54px);
 }
 
 @media (min-width: 576px) {
@@ -291,30 +270,30 @@ cite {
   }
   .responsive {
     width: 100%;
-    max-width: 745px;
+    max-width: 576px;
     height: auto;
   }
   #cal {
-    width: 745px;
+    width: 576px;
     height: 325px;
   }
   nav {
-    width: 745px;
+    width: 576px;
     height: 10px;
   }
   main {
     width: 100%;
   }
   footer {
-    width:745px;
+    width:576px;
     height: 325px;
   }
   aside {
-    width: 745px;
+    width: 576px;
     height: 325px;
   }
   nav ul {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -335,30 +314,30 @@ cite {
   }
   .responsive {
     width: 100%;
-    max-width: 990px;
+    max-width: 768px;
     height: auto;
   }
   #cal {
-    width: 990px;
+    width: 768px;
     height: 325px;
   }
   nav {
-    width: 990px;
+    width: 768px;
     height: 10px;
   }
   main {
     width: 100%;
   }
   footer {
-    width: 990px;
+    width: 768px;
     height: 325px;
   }
   aside {
-    width: 990px;
+    width: 768px;
     height: 325px;
   }
   nav ul {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 
