@@ -230,7 +230,7 @@ cite {
   }
   ul {
     margin: 0;
-    padding: 11px;
+    padding: 0;
   }
   footer {
     width:360px;
@@ -267,6 +267,10 @@ cite {
     "aside"
     "banner"  
     "footer";
+  }
+  ul {
+    margin: 0;
+    padding: 0;
   }
   .responsive {
     width: 100%;
@@ -310,13 +314,18 @@ cite {
     "banner"  
     "footer";
    }
+   ul {
+    margin: 0;
+    padding: 0;
+   }
+
    nav ul {
      display: flex;
      justify-content: space-between;
   }
   .responsive {
     width: 100%;
-    max-width: 768px;
+    max-width: 760px;
     height: auto;
   }
   #cal {
@@ -331,7 +340,7 @@ cite {
     width: 100%;
   }
   footer {
-    width: 768px;
+    width: 760px;
     height: 325px;
   }
   aside {
@@ -354,6 +363,10 @@ cite {
    }
    nav ul {
      flex-direction: column;
+   }
+   ul {
+    margin: 0;
+    padding: 11px;
    }
   .responsive {
     width: 100%;
@@ -392,4 +405,5 @@ cite {
  .banner {
   background-color: lavender;
  }
+}
 }
