@@ -11,7 +11,7 @@ h1 {
 
 header {
   height: 450px;
-  background-image: url("/myPortfolio/images/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg");
+  background-image: url("../images/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg");
   color: white;
   font-family: 'Anton', sans-serif;
   font-size: 70px;
