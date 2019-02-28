@@ -60,7 +60,7 @@ a {
 
 #showcase .bg-image {
   position: absolute;
-  background: #333  url(bwcomputerdesk.jpeg);
+  background: #333  url(../images/bwcomputerdesk.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +71,7 @@ a {
 }
 
 #showcase .pg-image {
-  background: url(myProfilePic.jpg);
+  background: url(../images/myProfilePic.jpg);
   background-size: cover;
   z-index: -1;
   display: inline-block;
