@@ -1,0 +1,103 @@
+/** {
+	margin: 0;
+	padding: 0;
+}*/
+
+/** {
+	box-sizing: border-box;
+}*/
+
+.grid div:nth-child(even) {
+	background-color: lightgray;
+}
+
+.grid div:nth-child(odd) {
+	background-color: lightgray;
+}
+
+.grid {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr 500px 500px 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "title title" "sidebar sidebar" "content content" "content2 content2" "content3 content3"
+		"footer footer";
+	grid-gap: 10px;
+}
+.title {
+	grid-area: title;
+	min-height: 400px;
+	background: url(../images/graphicstock-advertising-hand-holding-white-empty-paper_H_9eC73weil.jpg) no-repeat 0 -500px;
+	background-size: cover;
+	background-position: center;
+}
+
+.title h1 {
+	margin-top: 175px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 175px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	text-shadow: 3px 2px black;
+	text-decoration: underline;
+}
+
+/*.header {
+	grid-area: header;
+}*/
+
+.sidebar {
+	grid-area: sidebar;
+	min-height: 400px;
+	background: url(../images/apple-applications-apps-607812.jpg) no-repeat 0 -500px;
+	background-size: cover;
+	background-position: center;
+}
+.content {
+	grid-area: content;
+	min-height: 400px;
+	background: url(../images/access-app-application-267399.jpg) no-repeat 0 -500px;
+	background-size: cover;
+	background-position: center;
+}
+.content2 {
+	grid-area: content2;
+	min-height: 400px;
+	background: url(../images/antique-black-call-1416530.jpg) no-repeat 0 -500px;
+	background-size: cover;
+	background-position: center;
+}
+.content3 {
+	grid-area: content3;
+	min-height: 400px;
+	background: url(../images/black-and-white-close-up-cubes-1591062.jpg) no-repeat 0 -500px;
+	background-size: cover;
+	background-position: center;
+}
+/*.content4 {
+	grid-area: content4;
+}*/
+.footer {
+	grid-area: footer;
+	min-height: 200px;
+	background: url(../images/bwcomputerdesk.jpeg) no-repeat 0 -500px;
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (min-width: 736px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 500px 500px 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas: ". title title ." ". sidebar content ." ". content2 content3 ." ". footer footer .";
+	}
+}

@@ -1,162 +1,173 @@
 .flex-container {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
 }
-.flex-container2 {
-    display: flex;
-    flex-direction: row;
+
+#section {
+	height: 50%;
+	width: auto;
 }
 
 #section-a {
-    background:#6e6f71;
+	min-height: 350px;
+	background: url(../images/achievement-agreement-arms-1068523.jpg) no-repeat 0 -400px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: whitesmoke;
 }
 
 #section-b {
-    background: white;
+	background: white;
+	min-height: 300px;
+}
+
+h2 {
+	margin-top: 80px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 20px;
 }
 #section-c {
-    background:#6e6f71;
+	min-height: 350px;
+	background: url(../images/adult-blue-capturing-1530317.jpg) no-repeat 0 -400px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: whitesmoke;
 }
 
 #section-d {
-    background: white;
+	background: white;
+	min-height: 300px;
 }
 #section-e {
-    background:#6e6f71;
+	min-height: 350px;
+	background: url(../images/graphicstock-hand-using-phone-black-screen-with-cup-of-coffee-wooden-black-office-desk-table-on-top-view_BOzEFjvgjl.jpg)
+		no-repeat 0 -400px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: whitesmoke;
 }
 
 #section-f {
-    background: white;
-    padding: 1em;
+	background: white;
+	padding: 1em;
 }
 
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
 }
 
-h2, p, ul  {
-    text-align: center;
+# img {
+	height: 100%;
+	width: 100%;
+}
+
+h2,
+p,
+ul {
+	text-align: center;
 }
 
 li {
-    text-align: left;
-    list-style-type: none;
+	text-align: center;
+	list-style-type: none;
+	font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Form */
 form {
-    margin-left:auto;
-    margin-right:auto;
-    max-width: 500px;
-    background: #F7F7F7;
-    padding: 25px 15px 25px 10px;
-    font: 12px Georgia, "Times New Roman", Times, serif;
-    color: #888;
-    text-shadow: 1px 1px 1px #FFF;
-    border:1px solid #E4E4E4;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	background: #f7f7f7;
+	padding: 25px 15px 25px 10px;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	color: #888;
+	text-shadow: 1px 1px 1px #fff;
+	border: 1px solid #e4e4e4;
 }
 h1 {
-    font-size: 25px;
-    padding: 0px 0px 10px 40px;
-    display: block;
-    border-bottom:1px solid #E4E4E4;
-    margin: -10px -15px 30px -10px;;
-    color: #888;
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom: 1px solid #e4e4e4;
+	margin: -10px -15px 30px -10px;
+	color: #888;
 }
-h1>span {
-    display: block;
-    font-size: 11px;
+h1 > span {
+	display: block;
+	font-size: 11px;
 }
 label {
-    display: block;
-    margin: 0px;
+	display: block;
+	margin: 0px;
 }
-label>span {
-    float: left;
-    width: 20%;
-    text-align: right;
-    padding-right: 10px;
-    margin-top: 10px;
-    color: #888;
+label > span {
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	color: #888;
 }
-input[type="text"], input[type="email"], textarea, select {
-    border: 1px solid #DADADA;
-    color: #888;
-    height: 30px;
-    margin-bottom: 16px;
-    margin-right: 6px;
-    margin-top: 2px;
-    outline: 0 none;
-    padding: 3px 3px 3px 5px;
-    width: 70%;
-    font-size: 12px;
-    line-height:15px;
-    box-shadow: inset 0px 1px 4px #ECECEC;
-    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
-    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	border: 1px solid #dadada;
+	color: #888;
+	height: 30px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 70%;
+	font-size: 12px;
+	line-height: 15px;
+	box-shadow: inset 0px 1px 4px #ececec;
+	-moz-box-shadow: inset 0px 1px 4px #ececec;
+	-webkit-box-shadow: inset 0px 1px 4px #ececec;
 }
-textarea{
-    padding: 5px 3px 3px 5px;
+textarea {
+	padding: 5px 3px 3px 5px;
 }
 select {
-    background: #FFF url('down-arrow.png') no-repeat right;
-    background: #FFF url('down-arrow.png') no-repeat right;
-    appearance:none;
-    -webkit-appearance:none; 
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 70%;
-    height: 35px;
-    line-height: 25px;
+	background: #fff url('down-arrow.png') no-repeat right;
+	background: #fff url('down-arrow.png') no-repeat right;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 70%;
+	height: 35px;
+	line-height: 25px;
 }
-textarea{
-    height:100px;
+textarea {
+	height: 100px;
 }
 .button {
-    background: #E27575;
-    border: none;
-    padding: 10px 25px 10px 25px;
-    color: #FFF;
-    box-shadow: 1px 1px 5px #B6B6B6;
-    border-radius: 3px;
-    text-shadow: 1px 1px 1px #9E3F3F;
-    cursor: pointer;
+	background: #e27575;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #fff;
+	box-shadow: 1px 1px 5px #b6b6b6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9e3f3f;
+	cursor: pointer;
 }
 .button:hover {
-    background: #CF7A7A
+	background: #cf7a7a;
 }
