@@ -80,15 +80,29 @@ a {
 	padding: 6em 5em;
 	margin: 0;
 	border-radius: 50%;
-	animation-name: rowrow;
-	animation-duration: 1s;
-	visibility: hidden;
-	animation-delay: 2s;
+	animation-name: bounce;
+	animation-duration: 7s;
 }
 
-@keyframes rowrow {
-	100% {
-		visibility: visible;
+@keyframes bounce {
+	from {
+		top: 100px;
+		animation-timing-function: ease-out;
+	}
+	25% {
+		top: 50px;
+		animation-timing-function: ease-in;
+	}
+	50% {
+		top: 150px;
+		animation-timing-function: ease-out;
+	}
+	75% {
+		top: 75px;
+		animation-timing-function: ease-in;
+	}
+	to {
+		top: 100px;
 	}
 }
 
