@@ -1,5 +1,47 @@
-.box1 {
-	height: 50px;
+.container {
+	text-align: center;
+}
+
+.container div {
 	width: 50px;
-	color: red;
+	height: 50px;
+	border: 1px solid black;
+	margin: 3px;
+}
+
+#box1 {
+	background-color: red;
+}
+#box2 {
+	background-color: blue;
+}
+#box3 {
+	background-color: purple;
+}
+#box4 {
+	background-color: orange;
+}
+#box5 {
+	background-color: royalblue;
+}
+#box6 {
+	background-color: lightcoral;
+}
+#box7 {
+	background-color: palegoldenrod;
+}
+#box8 {
+	background-color: rosybrown;
+}
+#box9 {
+	background-color: olivedrab;
+}
+#box10 {
+	background-color: turquoise;
+}
+#box11 {
+	background-color: pink;
+}
+#box12 {
+	background-color: brown;
 }
