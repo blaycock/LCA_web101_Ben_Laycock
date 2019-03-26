@@ -1,12 +1,25 @@
-.container {
-	text-align: center;
-}
-
 .container div {
 	width: 50px;
 	height: 50px;
-	border: 1px solid black;
-	margin: 3px;
+	margin: 1em auto;
+	transition: width 3s;
+	text-align: center;
+	transition-property: all;
+}
+div:hover :nth-child(odd) {
+	width: 75px;
+	height: 75px;
+	margin: 1em auto;
+	transform: translate(100px) rotate(270deg);
+	transition-duration: 5s;
+}
+
+div:hover :nth-child(even) {
+	width: 25px;
+	height: 25px;
+	margin: 1em auto;
+	transform: translate(-100px) rotate(-270deg);
+	transition-duration: 2s;
 }
 
 #box1 {
