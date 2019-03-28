@@ -1,27 +1,26 @@
 /* Main Style Sheet*/
 
 header {
-grid-area: header;
-height: auto;
-width: auto;
-padding: 0;
-margin: 0;
-
+	grid-area: header;
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin: 0;
 }
 main {
-height: auto;
- min-height: calc(100vh - 54px);
- grid-area: main;
+	height: auto;
+	min-height: calc(100vh - 54px);
+	grid-area: main;
 }
 nav {
-grid-area: nav;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	grid-area: nav;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 aside {
-grid-area: aside;
+	grid-area: aside;
 }
 footer {
-grid-area: footer;
+	grid-area: footer;
 }
 
 /* Calendar */
@@ -35,32 +34,32 @@ grid-area: footer;
 }*/
 
 #cal {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden; 
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
 }
 
 ul {
-  margin: 0;
-  padding: 5px;
+	margin: 0;
+	padding: 5px;
 }
 
 li {
-  float: left;
-  display: block;
-  width: 14.2857%;
-  text-align: center;
-  list-style-type: none;
+	float: left;
+	display: block;
+	width: 14.2857%;
+	text-align: center;
+	list-style-type: none;
 }
 
-li:nth-child(n+1):nth-child(-n+7) {
-  font-weight: 900;
-  color: #e67e22;
+li:nth-child(n + 1):nth-child(-n + 7) {
+	font-weight: 900;
+	color: #e67e22;
 }
 
 /*img {
@@ -72,112 +71,108 @@ li:nth-child(n+1):nth-child(-n+7) {
 }*/
 
 .container {
-display: grid;
-grid-auto-rows: minmax(100px, auto);
-grid-gap: 1em;
-justify-items: stretch;
-align-items: stretch;
-grid-template-areas: 
-  "header"
-  "nav"
-  "main"
-  "aside"
-  "banner"
-  "footer"
-  "aside"
+	display: grid;
+	grid-auto-rows: minmax(100px, auto);
+	grid-gap: 1em;
+	justify-items: stretch;
+	align-items: stretch;
+	grid-template-areas: "header" "nav" "main" "aside" "banner" "footer" "aside";
 }
 
 /* Calculator */
 
 button {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  border-radius: 0;
-  border: none;
-  background-color: #FFF;
-  color: #000;
-  border: 1px solid #000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	border-radius: 0;
+	border: none;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
 }
 
 button:hover {
-  background-color: #DDD;
+	background-color: #ddd;
 }
 
 button:active {
-  background-color: #555;
+	background-color: #555;
 }
 
 #calculator {
-  width: 9rem;
-  margin: 0 auto;
-  border: 1px solid #000;
-  background: lightgray;
+	width: 9rem;
+	margin: 0 auto;
+	border: 1px solid #000;
+	background: lightgray;
 }
 
-#screen, #keypad {
-  width: auto;
-  margin: 0.5rem;
+#screen,
+#keypad {
+	width: auto;
+	margin: 0.5rem;
 }
 
 #screen {
-  height: 4ex;
-  line-height: 4ex;
-  border: 1px solid #000;
-  text-align: right;
-  padding: 0 1ex;
-  background: darkgray;
+	height: 4ex;
+	line-height: 4ex;
+	border: 1px solid #000;
+	text-align: right;
+	padding: 0 1ex;
+	background: darkgray;
 }
 
 #keypad {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 #keypad > button {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.5rem;
 }
 
 .aside {
-  display: flex;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 20%;
-  grid-gap: 1em;
+	display: flex;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 20%;
+	grid-gap: 1em;
 }
 
 .aside > div {
-  border: #333 1px solid;
-  padding: 1em;
+	border: #333 1px solid;
+	padding: 1em;
 }
+
+/* Todo lis*/
 
 /* Time and Date */
 
 .responsive {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 /* Quote */
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 
 .footer {
-  font-family: 'Droid Serif', serif;
-  font-size: 16px;
-  background: #54CDAC;
-  color: #fff;
+	font-family: 'Droid Serif', serif;
+	font-size: 16px;
+	background: #54cdac;
+	color: #fff;
 }
 cite {
-  font-style: normal;
+	font-style: normal;
 }
 .quote {
 	margin: 30px;
 	text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+	max-width: 800px;
+	margin: 0 auto;
 }
 .line-through {
 	display: block;
@@ -188,222 +183,190 @@ cite {
 .line-through span {
 	position: absolute;
 	display: inline-block;
-	background: #54CDAC;
+	background: #54cdac;
 	width: 200px;
 	margin-left: -100px;
 	line-height: 30px;
 }
 .stripe-border {
-	background: linear-gradient(
-		to bottom,
-		#fff,
-		#fff 25%,
-		#54CDAC 25%,
-		#54CDAC
-	);
+	background: linear-gradient(to bottom, #fff, #fff 25%, #54cdac 25%, #54cdac);
 	background-size: 100% 8px;
 }
 .stripe-border blockquote {
-  background: #54CDAC;
+	background: #54cdac;
 	margin: 0 10px;
 	padding: 30px;
 	font-size: 18px;
-  font-size: 24px;
-  line-height: 1.5;
+	font-size: 24px;
+	line-height: 1.5;
 }
-
 /* Media Queries */
 @media (min-width: 375px) {
-  .container {
-      display: grid;
-      grid-template-areas: 
-      "header"
-      "main"
-      "nav"
-      "aside"
-      "banner"  
-      "footer"; 
-  }
-  #cal {
-    width: 374px;
-    height: 325px;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  footer {
-    width:360px;
-    height: 325px;
-  }
-  aside {
-    width: 360px;
-    height: 325px;
-  }
-  nav {
-    width: 374px;
-    height: 10px;
-  }
-  nav ul {
-    font-size: 14px;
-  }
-  .responsive {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-  }
-  main {
-    height: auto;
-     min-height: calc(5vh - 54px);
-  }
+	.container {
+		display: grid;
+		grid-template-areas: "header" "main" "nav" "aside" "banner" "footer";
+	}
+	#cal {
+		width: 374px;
+		height: 325px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	footer {
+		width: 360px;
+		height: 325px;
+	}
+	aside {
+		width: 360px;
+		height: 325px;
+	}
+	nav {
+		width: 374px;
+		height: 10px;
+	}
+	nav ul {
+		font-size: 14px;
+	}
+	.responsive {
+		width: 100%;
+		max-width: 360px;
+		height: auto;
+	}
+	main {
+		height: auto;
+		min-height: calc(5vh - 54px);
+	}
 }
-
 @media (min-width: 576px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "nav"
-    "aside"
-    "banner"  
-    "footer";
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  .responsive {
-    width: 100%;
-    max-width: 567px;
-    height: auto;
-  }
-  #cal {
-    width: 576px;
-    height: 325px;
-  }
-  nav {
-    width: 576px;
-    height: 10px;
-    padding: 1em;
-  }
-  main {
-    width: 100%;
-  }
-  footer {
-    width:567px;
-    height: 325px;
-  }
-  aside {
-    width: 560px;
-    height: 325px;
-  }
-  nav ul {
-    font-size: 20px;
-    width: 600px;
-  }
+	.container {
+		display: grid;
+		grid-template-areas: "header" "main" "nav" "aside" "banner" "footer";
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	.responsive {
+		width: 100%;
+		max-width: 567px;
+		height: auto;
+	}
+	#cal {
+		width: 576px;
+		height: 325px;
+	}
+	nav {
+		width: 576px;
+		height: 10px;
+		padding: 1em;
+	}
+	main {
+		width: 100%;
+	}
+	footer {
+		width: 567px;
+		height: 325px;
+	}
+	aside {
+		width: 560px;
+		height: 325px;
+	}
+	nav ul {
+		font-size: 20px;
+		width: 600px;
+	}
 }
-
 @media (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "nav"
-    "aside"
-    "banner"  
-    "footer";
-   }
-   ul {
-    margin: 0;
-    padding: 0;
-   }
-
-   nav ul {
-     display: flex;
-     justify-content: space-between;
-  }
-  .responsive {
-    width: 100%;
-    max-width: 760px;
-    height: auto;
-  }
-  #cal {
-    width: 768px;
-    height: 325px;
-  }
-  nav {
-    width: 768px;
-    height: 10px;
-  }
-  main {
-    width: 100%;
-  }
-  footer {
-    width: 760px;
-    height: 325px;
-  }
-  aside {
-    width: 768px;
-    height: 325px;
-  }
-  nav ul {
-    font-size: 25px;
-  }
+	.container {
+		display: grid;
+		grid-template-areas: "header" "main" "nav" "aside" "banner" "footer";
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	.responsive {
+		width: 100%;
+		max-width: 760px;
+		height: auto;
+	}
+	#cal {
+		width: 768px;
+		height: 325px;
+	}
+	nav {
+		width: 768px;
+		height: 10px;
+	}
+	main {
+		width: 100%;
+	}
+	footer {
+		width: 760px;
+		height: 325px;
+	}
+	aside {
+		width: 768px;
+		height: 325px;
+	}
+	nav ul {
+		font-size: 25px;
+	}
 }
-
 @media (min-width: 992px) {
-  .container {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-      "header header  header"
-      "nav    main    aside"
-      "nav    main    banner"
-      "footer footer  footer"
-   }
-   nav ul {
-     flex-direction: column;
-   }
-   ul {
-    margin: 0;
-    padding: 11px;
-   }
-  .responsive {
-    width: 100%;
-    max-width: 70%;
-    height: auto;
-  }
-  #cal {
-    width: 100%;
-    height: 100%;
-  }
-  nav {
-    width: 100%;
-    height: 100%;
-    background-color: lightsalmon;
-  }
-  main {
-    width: 100%;
-    background-color: pink;
-  }
-  footer {
-    width: 100%;
-    height: 100%;
-    background-color: khaki;
-  }
-  aside {
-    width: 100%;
-    height: 100%;
-    background-color: lightgreen;
-  }
-  nav ul {
-    font-size: 18px;
-  }
-  header {
-  background-color: lightblue;
-}
- .banner {
-  background-color: lavender;
- }
+	.container {
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas: "header header  header" "nav    main    aside" "nav    main    banner"
+			"footer footer  footer";
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	ul {
+		margin: 0;
+		padding: 11px;
+	}
+	.responsive {
+		width: 100%;
+		max-width: 70%;
+		height: auto;
+	}
+	#cal {
+		width: 100%;
+		height: 100%;
+	}
+	nav {
+		width: 100%;
+		height: 100%;
+		background-color: lightsalmon;
+	}
+	main {
+		width: 100%;
+		background-color: pink;
+	}
+	footer {
+		width: 100%;
+		height: 100%;
+		background-color: khaki;
+	}
+	aside {
+		width: 100%;
+		height: 100%;
+		background-color: lightgreen;
+	}
+	nav ul {
+		font-size: 18px;
+	}
+	header {
+		background-color: lightblue;
+	}
+	.banner {
+		background-color: lavender;
+	}
 }
