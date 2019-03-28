@@ -1,0 +1,24 @@
+h1,
+p,
+hr,
+h4 {
+	text-align: center;
+	color: white;
+}
+
+.jumbotron {
+	background-color: #06d6a0;
+}
+
+.card {
+	background-color: #118ab2;
+}
+
+body {
+	background-color: #ffd166;
+}
+
+.card-header {
+	height: 20%;
+	background-color: #073b4c;
+}
