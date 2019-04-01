@@ -3,7 +3,7 @@ p,
 hr,
 h4 {
 	text-align: center;
-	color: white;
+	color: #212529;
 }
 
 .jumbotron {
@@ -16,9 +16,14 @@ h4 {
 
 body {
 	background-color: #ffd166;
+	font-family: 'Baloo Chettan', cursive;
 }
 
 .card-header {
 	height: auto;
 	background-color: #073b4c;
+}
+
+.carousel {
+	background: white;
 }
