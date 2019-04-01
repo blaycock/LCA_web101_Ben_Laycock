@@ -1,16 +1,10 @@
-$(function() {
-	let $list = $('ul');
-	let $newItemForm = $('#newItemForm');
-
-	$newItemForm.on('submit', function(e) {
-		e.preventDefault();
-		let text = $('input[type="text"]').val();
-		$list.append(`<li>${text}</li>`);
-		$('input[type="text"]').val('');
+$(document).ready(function() {
+	$('button').click(function() {
+		$('#todo').append(
+			'<ul>' + $('input[name=task]').val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>"
+		);
 	});
-
-	$list.on('click', 'li', function() {
-		let $this = $(this);
-		$this.remove();
+	$('body').on('click', '#todo a', function() {
+		$(this).closest('ul').remove();
 	});
 });
