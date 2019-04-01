@@ -334,7 +334,7 @@ cite {
 		font-size: 25px;
 	}
 }
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
 	.container {
 		grid-template-columns: 1fr 4fr 1fr;
 		grid-template-areas: "header header  header" "nav    main    aside" "nav    main    banner"
