@@ -1,0 +1,20 @@
+.jumbotron {
+	background: #06d6a0;
+	height: 400px;
+	width: auto;
+	margin: 0;
+}
+
+.box1 {
+	background: #ffd166;
+	height: 400px;
+	width: auto;
+	margin: 0;
+}
+
+.box2 {
+	background: #118ab2;
+	height: 400px;
+	width: auto;
+	margin: 0;
+}

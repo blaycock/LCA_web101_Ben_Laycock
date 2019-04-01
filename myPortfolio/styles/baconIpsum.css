@@ -19,6 +19,6 @@ body {
 }
 
 .card-header {
-	height: 20%;
+	height: auto;
 	background-color: #073b4c;
 }
