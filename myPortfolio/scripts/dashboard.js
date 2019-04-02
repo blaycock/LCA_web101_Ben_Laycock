@@ -1,3 +1,5 @@
+// ToDo List //
+
 $(document).ready(function() {
 	$('button').click(function() {
 		$('#todo').append(
@@ -9,7 +11,7 @@ $(document).ready(function() {
 	});
 });
 
-//Geolocation//
+// Geolocation //
 
 var map, infoWindow;
 function initMap() {
