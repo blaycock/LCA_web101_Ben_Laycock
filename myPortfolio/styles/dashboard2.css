@@ -10,7 +10,11 @@
 	height: 100%;
 	color: white;
 	font-style: bold;
-	font-family: 'Dokdo', cursive;
+	font-family: 'Acme', sans-serif;
+}
+
+body {
+	font-family: 'Acme', sans-serif;
 }
 
 /*Calculator*/
