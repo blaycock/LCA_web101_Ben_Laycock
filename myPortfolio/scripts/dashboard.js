@@ -54,3 +54,50 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 	);
 	infoWindow.open(map);
 }
+
+// Calculator //
+
+// Determines button clicked via id
+function myFunction(id) {
+	document.calc.result.value += id;
+}
+
+// Clears calculator input screen
+function clearScreen() {
+	document.calc.result.value = '';
+}
+
+// Calculates input values
+function calculate() {
+	try {
+		var input = eval(document.calc.result.value);
+		document.calc.result.value = input;
+	} catch (err) {
+		document.calc.result.value = 'Error';
+	}
+}
+
+// tic tac //
+$(document).ready(function() {
+	let player1 = 'X';
+	let player2 = 'O';
+
+	let currentTurn = 1;
+	let movesMade = 0;
+
+	let sqr = $('.square');
+
+	sqr.on('click', function(c) {
+		movesMade++;
+
+		if (currentTurn === 1) {
+			event.target.innerHTML = player1;
+			event.target.style.color = 'red';
+			currentTurn++;
+		} else {
+			event.target.innerHTML = player2;
+			event.target.style.color = 'blue';
+			currentTurn--;
+		}
+	});
+});
