@@ -1,43 +1,89 @@
-const name = "William";
-const job = "Web Developer";
-const age = "31";
-const city = "Lubbock";
+// if (someting) {
+//   do something
+// } else {
+//   do something else
+// }
 
-let html;
+const id = 100;
 
-//Without template strings (es5)
-html =
-  "<ul><li>Name: " +
-  name +
-  "</li><li>Age: " +
-  age +
-  " </li><li>Job: " +
-  job +
-  "</li><li>City: " +
-  city +
-  "</li></ul>";
+// //Equal To
+// if (id == 100) {
+//   console.log("CORRECT");
+// } else {
+//   console.log("INCORRECT");
+// }
 
-html = "<ul>" + "<li>Name: " + name + "</li>";
-"<li>Age: " + age + "</li>";
-"<li>Job: " + job + "</li>";
-"<li>City: " + city + "</li>" + "</ul>";
+// //Not equal to
+// if (id != 101) {
+//   console.log("CORRECT");
+// } else {
+//   console.log("INCORRECT");
+// }
 
-function hello() {
-  return "Hello";
+// // Equal to value and type
+// if (id === 100) {
+//   console.log("CORRECT");
+// } else {
+//   console.log("INCORRECT");
+// }
+
+// // Equal to value and type
+// if (id !== 100) {
+//   console.log("CORRECT");
+// } else {
+//   console.log("INCORRECT");
+// }
+
+//Test if undefined
+// if (typeof id !== "undefined") {
+//   console.log(`The ID is ${id}`);
+// } else {
+//   console.log("NO ID");
+// }
+
+// GREATER OR LESS THAN
+// if (id >= 200) {
+//   console.log("CORRECT");
+// } else {
+//   console.log("INCORRECT");
+// }
+
+//IF Else
+const color = "yellow";
+
+// if (color === "red") {
+//   console.log("Color is red");
+// } else if (color === "blue") {
+//   console.log("Color is blue");
+// } else {
+//   console.log("Color is not red or blue");
+// }
+
+//Logical Operations
+
+const name = "Steve";
+const age = 70;
+
+//AND &&
+if (age > 0 && age < 12) {
+  console.log(`${name} is a child`);
+} else if (age >= 13 && age <= 19) {
+  console.log(`${name} is a teenager`);
+} else {
+  console.log(`${name} is and adult`);
 }
 
-//With template strings
-html = `
-<ul>
-<li>Name: ${name}</li>
-<li>Age: ${age}</li>
-<li>Job: ${job}</li>
-<li>${2 + 2}</li>
-<li>${hello()}</li>
-<li>${age > 30 ? "Over 30" : "Under 30"}</li>
-<li>City: ${city}</li>
-</ul>
+// OR ||
+if (age < 16 || age > 65) {
+  console.log(`${name} cannot run in race`);
+} else {
+  console.log(`${name} is registered for the race`);
+}
 
-`;
+//TERNARY Operator
+console.log(id === 100 ? "Correct" : "Incorrect");
 
-document.body.innerHTML = html;
+//without curly brackets
+
+if (id === 100) console.log("Correct");
+else console.log("Incorrect");
