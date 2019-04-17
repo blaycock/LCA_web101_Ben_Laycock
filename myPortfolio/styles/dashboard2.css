@@ -1,129 +1,124 @@
 /* Google Maps */
 #map {
-	width: 100%;
-	height: 350px;
+  width: 100%;
+  height: 350px;
 }
 
 .jumbotron {
-	background-image: url(../images/4k-wallpaper-architecture-background-1308624.jpg);
-	background-size: cover;
-	height: 100%;
-	color: white;
-	font-style: bold;
-	font-family: 'Acme', sans-serif;
+  background-image: url(../images/4k-wallpaper-architecture-background-1308624.jpg);
+  background-size: cover;
+  height: 100%;
+  color: white;
+  font-style: bold;
+  font-family: "Acme", sans-serif;
 }
 
 body {
-	font-family: 'Acme', sans-serif;
-	text-align: center;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+}
+h1 {
+  font-family: "Acme", sans-serif;
 }
 
 /*Calculator*/
 input {
-	border: none;
+  border: none;
 }
 button {
-	height: 50px;
-	width: 50px;
-	margin: 10px 4px;
-	box-shadow: inset 1px 1px 50px #0066ff;
-	border: none !important;
+  height: 50px;
+  width: 50px;
+  margin: 10px 4px;
+  box-shadow: inset 1px 1px 50px #0066ff;
+  border: none !important;
 }
 *:focus {
-	outline: 0 !important;
+  outline: 0 !important;
 }
 #allClear {
-	box-shadow: inset 1px 1px 50px #990000;
-	border: none;
+  box-shadow: inset 1px 1px 50px #990000;
+  border: none;
 }
 #clear {
-	box-shadow: inset 1px 1px 50px #cc6600;
-	border: none;
+  box-shadow: inset 1px 1px 50px #cc6600;
+  border: none;
 }
 #equals {
-	box-shadow: inset 1px 1px 50px #006633;
-	border: none;
+  box-shadow: inset 1px 1px 50px #006633;
+  border: none;
 }
 /* Hidden button for formatting sake */
 #blank {
-	visibility: hidden;
+  visibility: hidden;
 }
 .calcBG {
-	width: 280px;
-	background-color: #0000cc;
-	border-radius: 20px;
-	padding: 37px;
-	margin-top: 5px;
-	margin-bottom: 50px;
-	box-shadow: inset 1px 1px 50px #000;
-	margin: auto;
+  width: 280px;
+  background-color: #0000cc;
+  border-radius: 20px;
+  padding: 37px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  box-shadow: inset 1px 1px 50px #000;
+  margin: auto;
 }
 .screen {
-	height: 40px;
-	border-radius: 10px;
-	padding: 10px;
-	margin: 10px 2px;
-	font-size: 16px;
-	font-weight: bold;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 2px;
+  font-size: 16px;
+  font-weight: bold;
 
-	background: #8e9eab; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to right,
-		#8e9eab,
-		#eef2f3
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8e9eab,
+    #eef2f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8e9eab,
+    #eef2f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	box-shadow: 0px 4px #000099 inset;
+  box-shadow: 0px 4px #000099 inset;
 }
 small {
-	color: #fff;
-	font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
-.flex-container {
-	display: flex;
+/* tic tac toe*/
+.header {
+  font-style: italic;
+  font-family: "Comic-Sans", serif;
+  margin: 20px 0;
 }
-
-.flex-column {
-	flex-direction: column;
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-}
-
-.flex-center {
-	justify-content: center;
-	align-items: center;
-}
-.board-container {
-	height: 100%;
-	width: 100%;
-}
-.board {
-	width: 618px;
-}
-
 .square {
-	width: 200px;
-	height: 200px;
-	border: 3px solid mediumturquoise;
-	font-size: 56px;
+  background-color: black;
+  height: 190px;
+  border: 2px solid white;
 }
-.square:hover {
-	background-color: floralwhite;
-	cursor: pointer;
+span {
+  font-size: 124px;
+  color: white;
+  text-align: center;
 }
-header {
-	text-align: center;
+.playAgain {
+  margin: 0 0 20px;
+}
 
-	font-size: 25px;
-	margin: 2em;
+/* Calandar */
+.responsiveCal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
 }
-.title {
-	font-size: 42px;
 
-	color: black;
-	margin-bottom: 10px;
-	margin-left: 10px;
+.responsiveCal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

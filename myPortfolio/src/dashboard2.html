@@ -16,7 +16,7 @@
     <h1 class="display-3">Dashboard</h1>
   </div>
   <div class="container">
-  <div class="card-deck" style="width: auto; height: 450px;">
+  <div class="card-deck" style="width: auto; height: 500px;">
     <div class="card border border-dark">
       <img class="card-img-top" src="holder.js/100x180/" alt="">
       <div class="card-body text-center">
@@ -28,7 +28,7 @@
   </div>
   <br>
   <div class="container">
-    <div class="card border border-dark" style="width: auto; height: 350px;">
+    <div class="card border border-dark">
       <img class="card-img-top" src="holder.js/100x180/" alt="">
       <div class="card-body text-center">
         <div class="form-group">
@@ -48,8 +48,8 @@
 </div>
   <br>
 <div class="container">
-  <div class="card-deck" style="width: auto; height: 625px;">
-    <div class="card">
+  <div class="card-deck">
+    <div class="card border border-dark">
       <div class="card-body">
           <div class="container text-center" id="calc">
               <div class="calcBG text-center">
@@ -96,53 +96,84 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="holder.js/100x180/" alt="">
       <div class="card-body">
-      </div>
-    </div>
-  </div>
- </div>
-<br>
-<div class="container">
-  <div class="card-deck" style="width: auto; height: 800px;">
-    <div class="card">
-      <div class="card-body">
-          <header>Tic Tac Toe Game</header>
-          <div class="board-container flex-container flex-column flex-center">
-              <div class="board flex-container flex-wrap">
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-              </div>
+        <h1>My Calendar</h1>
+          <div class="responsiveCal">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=benlaycock22%40gmail.com&amp;color=%2329527A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
           </div>
       </div>
     </div>
+  </div>
+ </div>
+<br>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xl-6 text-center header">
+            <h1> Play Tic-Tac-Toe</h1>
+            <button1 class="btn btn-lg btn-primary playAgain" onclick="clearBoard()">Play Again</button>
+        </div>
+
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Game Results</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="gameResults"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    </div>
+
+
+    <div class="row text-center">
+        <div class="col-md-4 col-md-offset-3 col-xs-4 square" onclick="clicked('.row11')">
+            <span class="row11"></span>
+        </div>
+        <div class="col-md-4 col-xs-4 square" onclick="clicked('.row12')">
+            <span class="row12"></span>
+        </div>
+        <div class="col-md-4 col-xs-4 square" onclick="clicked('.row13')">
+            <span class="row13"></span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4 col-md-offset-3 col-xs-4 square" onclick="clicked('.row21')">
+            <span class="row21"></span>
+        </div>
+        <div class="col-md-4 col-xs-4 square" onclick="clicked('.row22')">
+            <span class="row22"></span>
+        </div>
+        <div class="col-md-4 col-xs-4 square" onclick="clicked('.row23')">
+            <span class="row23"></span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4 col-md-offset-3 col-xs-4 square" onclick="clicked('.row31')">
+            <span class="row31"></span>
+        </div>
+        <div class="col-md-4 col-xs-4 square" onclick="clicked('.row32')">
+            <span class="row32"></span>
+        </div>
+        <div class="col-md-4 col-xs-4 square" onclick="clicked('.row33')">
+            <span class="row33"></span>
+        </div>
+    </div>
+
 </div>
 <br>
 <div class="container">
-  <div class="card-deck" style="width: auto; height: 200px;">
-    <div class="card">
-      <img class="card-img-top" src="holder.js/100x180/" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Title</h4>
-        <p class="card-text">Text</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="holder.js/100x180/" alt="">
-      <div class="card-body">
-        <h4 class="card-title">Title</h4>
-        <p class="card-text">Text</p>
-      </div>
-    </div>
-  </div>
- </div>
+    <blockquote class="blockquote">
+        <p class="mb-0">“Get busy living or get busy dying.”</p>
+        <footer class="blockquote-footer">Stephen King <cite title="Source Title"></cite></footer>
+      </blockquote>
 </div>
     <!-- Optional JavaScript -->
     
