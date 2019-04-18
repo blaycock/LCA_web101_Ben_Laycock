@@ -1,89 +1,52 @@
-// if (someting) {
-//   do something
-// } else {
-//   do something else
-// }
+// //document.getElementsByClassName
 
-const id = 100;
+// const items = document.getElementsByClassName("collection-item");
+// console.log(items);
+// console.log(items[0]);
+// items[0].style.color = "red";
+// items[0].textContent = "Hello";
 
-// //Equal To
-// if (id == 100) {
-//   console.log("CORRECT");
-// } else {
-//   console.log("INCORRECT");
-// }
+// const listItems = document
+//   .querySelector("ul")
+//   .getElementsByClassName("collection-item");
 
-// //Not equal to
-// if (id != 101) {
-//   console.log("CORRECT");
-// } else {
-//   console.log("INCORRECT");
-// }
+// console.log(listItems);
 
-// // Equal to value and type
-// if (id === 100) {
-//   console.log("CORRECT");
-// } else {
-//   console.log("INCORRECT");
-// }
+// getelements by tag name
 
-// // Equal to value and type
-// if (id !== 100) {
-//   console.log("CORRECT");
-// } else {
-//   console.log("INCORRECT");
-// }
+// let lis = document.getElementsByTagName("li");
+// console.log(lis);
+// console.log(lis[0]);
+// lis[0].style.color = "red";
+// lis[3].textContent = "Hello";
 
-//Test if undefined
-// if (typeof id !== "undefined") {
-//   console.log(`The ID is ${id}`);
-// } else {
-//   console.log("NO ID");
-// }
+// //Convert HTML colleciton into array
+// lis = Array.from(lis);
 
-// GREATER OR LESS THAN
-// if (id >= 200) {
-//   console.log("CORRECT");
-// } else {
-//   console.log("INCORRECT");
-// }
+// lis.reverse();
 
-//IF Else
-const color = "yellow";
+// lis.forEach(function(li, index) {
+//   console.log(li.className);
+//   li.textContent = `${index}: hello`;
+// });
 
-// if (color === "red") {
-//   console.log("Color is red");
-// } else if (color === "blue") {
-//   console.log("Color is blue");
-// } else {
-//   console.log("Color is not red or blue");
-// }
+// console.log(lis);
 
-//Logical Operations
+const items = document.querySelectorAll("ul.collection li.collection-item");
 
-const name = "Steve";
-const age = 70;
+items.forEach(function(item, index) {
+  item.textContent = `${index}: hello`;
+});
 
-//AND &&
-if (age > 0 && age < 12) {
-  console.log(`${name} is a child`);
-} else if (age >= 13 && age <= 19) {
-  console.log(`${name} is a teenager`);
-} else {
-  console.log(`${name} is and adult`);
+const liOdd = document.querySelectorAll("li:nth-child(odd)");
+const liEven = document.querySelectorAll("li:nth-child(even)");
+
+liOdd.forEach(function(li, index) {
+  li.style.background = "#ccc";
+});
+
+for (let i = 0; i < liEven.length; i++) {
+  liEven[i].style.background = "#f4f4f4";
 }
 
-// OR ||
-if (age < 16 || age > 65) {
-  console.log(`${name} cannot run in race`);
-} else {
-  console.log(`${name} is registered for the race`);
-}
-
-//TERNARY Operator
-console.log(id === 100 ? "Correct" : "Incorrect");
-
-//without curly brackets
-
-if (id === 100) console.log("Correct");
-else console.log("Incorrect");
+console.log(items);
